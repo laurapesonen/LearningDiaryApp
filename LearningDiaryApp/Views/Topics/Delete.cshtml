@@ -63,7 +63,24 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <!--<input type="submit" value="Delete" class="btn btn-danger" /> |-->
+        <!--<button onclick="confirmAction()">Delete</button>-->
         <a asp-action="Index">Back to List</a>
+
+        <button onclick="myFunction()">Delete</button>
+
+        <p id="delete"></p>
+
+        <script>
+            function myFunction() {
+                var txt;
+                if (confirm("Are you sure you want to delete this entry?")) {
+                    txt = "You pressed OK!";
+                    }
+                
+                document.getElementById("delete").innerHTML = txt;
+            }
+        </script>
+
     </form>
 </div>

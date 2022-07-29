@@ -2,22 +2,57 @@
     ViewData["Title"] = "Etusivu";
 }
 
+
 <div class="text-center">
     <h1 class="display-4">Welcome to the Learning Diary!</h1>
     <p>Let's start learning...</p>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
 </div>
 
-    <div class="row">
-        <div class="col">
-            <h2>Sovelluksen esittely</h2>
-            <p>I'm baby selfies lomo +1 bespoke, ennui cold-pressed cornhole before they sold out tacos iceland try-hard gluten-free next level air plant. Raclette pabst four dollar toast single-origin coffee air plant chia squid bespoke fashion axe. Vinyl lyft waistcoat woke tumblr celiac. Bitters lomo mustache forage, cliche seitan ugh man braid marfa leggings lumbersexual live-edge.</p>
-        </div>
-        <div class="col">
-            <h2>Uudet toiminnallisuudet</h2>
-            <p>Affogato celiac pitchfork, snackwave +1 jean shorts keytar salvia food truck 90's yes plz vice four dollar toast 8-bit hammock. Narwhal tacos ramps brooklyn tofu disrupt yes plz neutra iceland. Green juice keffiyeh hoodie thundercats. Glossier salvia mixtape tonx leggings palo santo lomo schlitz.</p>
-        </div>
+<div class="row">
+    <div class="col">
+        <h2>About the app</h2>
+        <p>The learning diary app makes learning easy and fun! Make entries for new courses, edit course details and mark down completed courses.
+            You can also delete courses and search previous entries. Let's begin!</p>
     </div>
+    <div class="col">
+        <h2>New functions</h2>
+        <p>The app is free, but for only 5,99$ a month you get the new and improved features!</p>
+    </div>
+</div>
+
+<br>
+<br>
+
+<body>
+
+    <h1>Here you can find instructions on how to use the app</h1>
+
+    <div class="button">
+        
+        <button id="MyButton">Click here</button>
+        <h1 id="MyHeading"></h1>
+    </div>
+
+</body>
+
+
+<script>
+    
+    //Select button by id
+    const MyButton = document.getElementById('MyButton');
+    //Add on click listener for button
+    MyButton.addEventListener('click',
+        function () {
+
+            //Select (h1) heading by id, and then change it's value to (instructions)
+            document.getElementById('MyHeading').innerText = "Go to the Topics page to enter a new course and edit ongoing courses.";
+            
+
+        });
+
+</script>
+
 
 <!--View-osuus MVC:stä eli käyttöliittymäosuus -->
 <!--Tämä on etusivu, joka näkyy selaimessa nimellä Home-->
