@@ -1,35 +1,32 @@
 ﻿@{
     ViewData["Title"] = "Etusivu";
 }
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to the Learning Diary!</h1>
-    <p>Let's start learning...</p>
-    
+    <h1 class="display-4" style="font-size:360%;" margin-top: 300px;> <b>Welcome to the Learning Diary!</b></h1>
+    <p style="font-size:260%;"><b>Let's start learning...</b></p>
+
 </div>
 
-<div class="row">
-    <div class="col">
-        <h2>About the app</h2>
-        <p>The learning diary app makes learning easy and fun! Make entries for new courses, edit course details and mark down completed courses.
-            You can also delete courses and search previous entries. Let's begin!</p>
-    </div>
-    <div class="col">
-        <h2>New functions</h2>
-        <p>The app is free, but for only 5,99$ a month you get the new and improved features!</p>
-    </div>
-</div>
 
 <br>
 <br>
+
 
 <body>
 
-    <h1>Here you can find instructions on how to use the app</h1>
+
+
+    <h1>Instructions</h1>
 
     <div class="button">
-        
+
         <button id="MyButton">Click here</button>
         <h1 id="MyHeading"></h1>
     </div>
@@ -38,7 +35,7 @@
 
 
 <script>
-    
+
     //Select button by id
     const MyButton = document.getElementById('MyButton');
     //Add on click listener for button
@@ -46,8 +43,8 @@
         function () {
 
             //Select (h1) heading by id, and then change it's value to (instructions)
-            document.getElementById('MyHeading').innerText = "Go to the Topics page to enter a new course and edit ongoing courses.";
-            
+            document.getElementById('MyHeading').innerText = "Go to the Topics page to enter a new course, edit ongoing courses or delete courses.";
+
 
         });
 

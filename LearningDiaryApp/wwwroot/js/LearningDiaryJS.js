@@ -9,3 +9,12 @@ poisto.addEventListener('submit', (event) => {
         poisto.submit();
     }
 });*/
+
+
+function myFunction() {
+    var x = confirm("Are you sure you want to delete?");
+    if (x)
+        return true;
+    else
+        return false;
+}

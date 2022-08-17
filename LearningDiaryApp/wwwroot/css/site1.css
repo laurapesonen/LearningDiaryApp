@@ -63,8 +63,11 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-color: lightcyan;
-    /*TÄMÄ EI TOIMI/ background-image: url('C:\Users\Laura\Desktop\HTML&CSS\LearningDiary.jpg');*/
+    /*background-color: white;*/
+    background-image: url("https://blogs.ibo.org/files/2020/10/Learning-environment-1200x800-1.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .footer {
   position: absolute;
@@ -87,6 +90,8 @@ body {
 .form-control:hover {
     color: coral;
 }
+
+
 
 
 
